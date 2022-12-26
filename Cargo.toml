@@ -1,5 +1,5 @@
 [package]
-name = "first_project"
+name = "rust_intro"
 version = "0.1.0"
 edition = "2021"
 authors = ["Leandre Nsengumuremyi <https://github.com/dreking>"]
