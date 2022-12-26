@@ -24,6 +24,17 @@ use control_flow::loop_statement::loop_infinite;
 use control_flow::loop_statement::while_loop;
 use control_flow::match_statement::match_statement;
 
+mod data_structure;
+use data_structure::array_structure::array_structure;
+use data_structure::enum_structure::enum_structure;
+use data_structure::generics_structure::generics_structure;
+use data_structure::option_t_structure::option_t_structure;
+use data_structure::pattern_matching::pattern_matching;
+use data_structure::slice_structure::slice_structure;
+use data_structure::struct_structure::struct_structure;
+use data_structure::tuple_structure::tuple_structure;
+use data_structure::union_structure::union_structure;
+
 fn main() {
     integers();
     characters();
@@ -39,4 +50,13 @@ fn main() {
     for_loop();
     match_statement();
     combination_lock();
+    struct_structure();
+    enum_structure();
+    union_structure();
+    option_t_structure();
+    array_structure();
+    slice_structure();
+    tuple_structure();
+    pattern_matching();
+    generics_structure();
 }
