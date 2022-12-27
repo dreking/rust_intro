@@ -35,6 +35,12 @@ use data_structure::struct_structure::struct_structure;
 use data_structure::tuple_structure::tuple_structure;
 use data_structure::union_structure::union_structure;
 
+mod collections;
+use collections::hashmap::hashmap;
+use collections::hashset::hashset;
+use collections::iterations::iterations;
+use collections::vectors::vectors;
+
 fn main() {
     integers();
     characters();
@@ -59,4 +65,8 @@ fn main() {
     tuple_structure();
     pattern_matching();
     generics_structure();
+    vectors();
+    hashmap();
+    hashset();
+    iterations();
 }
