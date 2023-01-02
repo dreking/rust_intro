@@ -45,6 +45,9 @@ mod strings;
 use strings::strings::formatting;
 use strings::strings::strings;
 
+mod exercises;
+use exercises::number_guessing_game::number_guessing_game;
+
 fn main() {
     integers();
     characters();
@@ -75,4 +78,5 @@ fn main() {
     iterations();
     strings();
     formatting();
+    number_guessing_game();
 }
