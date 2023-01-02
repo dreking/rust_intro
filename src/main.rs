@@ -41,6 +41,10 @@ use collections::hashset::hashset;
 use collections::iterations::iterations;
 use collections::vectors::vectors;
 
+mod strings;
+use strings::strings::formatting;
+use strings::strings::strings;
+
 fn main() {
     integers();
     characters();
@@ -69,4 +73,6 @@ fn main() {
     hashmap();
     hashset();
     iterations();
+    strings();
+    formatting();
 }
