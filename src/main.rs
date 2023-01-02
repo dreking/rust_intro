@@ -1,4 +1,5 @@
 mod operators;
+
 use operators::operators::operators;
 
 mod constant_static;
@@ -48,6 +49,14 @@ use strings::strings::strings;
 mod exercises;
 use exercises::number_guessing_game::number_guessing_game;
 
+mod functions;
+use functions::closures::closures;
+use functions::functions::fnarguments;
+use functions::functions::increase;
+use functions::functions::product;
+use functions::higher_order_functions::higher_order_functions;
+use functions::methods::methods;
+
 fn main() {
     integers();
     characters();
@@ -79,4 +88,10 @@ fn main() {
     strings();
     formatting();
     number_guessing_game();
+    fnarguments(5);
+    increase(&mut 2);
+    product(2, 3);
+    methods();
+    closures();
+    higher_order_functions();
 }
