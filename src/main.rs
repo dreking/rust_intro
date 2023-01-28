@@ -57,6 +57,16 @@ use functions::functions::product;
 use functions::higher_order_functions::higher_order_functions;
 use functions::methods::methods;
 
+mod traits;
+use traits::static_dispatch::dynamic_dispatch;
+use traits::static_dispatch::static_dispatch;
+use traits::traits::traits;
+use traits::traits::traits_param;
+use traits::traits_drop::traits_drop;
+use traits::traits_into::traits_into;
+use traits::traits_op_overload::traits_op_overload;
+use traits::vector_multitypes::vector_multitypes;
+
 fn main() {
     integers();
     characters();
@@ -94,4 +104,12 @@ fn main() {
     methods();
     closures();
     higher_order_functions();
+    traits();
+    traits_param();
+    traits_into();
+    traits_drop();
+    traits_op_overload();
+    static_dispatch();
+    dynamic_dispatch();
+    vector_multitypes();
 }
