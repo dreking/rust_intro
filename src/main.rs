@@ -72,6 +72,9 @@ use lifetime::lifetime::lifetime;
 use lifetime::ownership::ownership;
 use lifetime::reference_counting::reference_counting;
 
+mod circular_reference;
+use circular_reference::circular_reference::circular_reference;
+
 fn main() {
     integers();
     characters();
@@ -121,4 +124,5 @@ fn main() {
     borrowing();
     lifetime();
     reference_counting();
+    circular_reference();
 }
