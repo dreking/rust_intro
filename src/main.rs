@@ -78,6 +78,9 @@ use circular_reference::circular_reference::circular_reference;
 mod concurrency;
 use concurrency::concurrency::concurrency;
 
+mod crates;
+use crates::crates::crates;
+
 fn main() {
     integers();
     characters();
@@ -129,4 +132,5 @@ fn main() {
     reference_counting();
     circular_reference();
     concurrency();
+    crates();
 }
