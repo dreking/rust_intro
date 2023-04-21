@@ -8,3 +8,4 @@ authors = ["Leandre Nsengumuremyi <https://github.com/dreking>"]
 
 [dependencies]
 rand = "0.8.5"
+phrases = { path = "../phrases" }
