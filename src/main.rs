@@ -80,6 +80,7 @@ use concurrency::concurrency::concurrency;
 
 mod crates;
 use crates::crates::crates;
+use crates::phrases::phrases;
 
 fn main() {
     integers();
@@ -133,4 +134,5 @@ fn main() {
     circular_reference();
     concurrency();
     crates();
+    phrases();
 }
